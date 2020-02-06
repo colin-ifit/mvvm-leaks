@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:local="http://schemas.android.com/apk/res/com.companyname.leakcanarytest"
+    android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+	<TextView
+		android:text="Hello Main View"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+        android:padding="25dp"
+		android:id="@+id/textView1" />
+	<Button
+		android:text="Second"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+        local:MvxBind="Click Second" />
+    <Button
+		android:text="Open Third Activity"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/ThirdActivityButton" />
+</LinearLayout>
