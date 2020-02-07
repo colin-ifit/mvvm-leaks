@@ -389,115 +389,118 @@ namespace LeakCanaryTest.Droid
 		{
 			
 			// aapt resource value: 0x7F070003
-			public const int leak_canary_about_text = 2131165187;
+			public const int imageView1 = 2131165187;
 			
 			// aapt resource value: 0x7F070004
-			public const int leak_canary_bottom_navigation_bar = 2131165188;
+			public const int leak_canary_about_text = 2131165188;
 			
 			// aapt resource value: 0x7F070005
-			public const int leak_canary_chip_library_leak = 2131165189;
+			public const int leak_canary_bottom_navigation_bar = 2131165189;
 			
 			// aapt resource value: 0x7F070006
-			public const int leak_canary_chip_new = 2131165190;
+			public const int leak_canary_chip_library_leak = 2131165190;
 			
 			// aapt resource value: 0x7F070007
-			public const int leak_canary_count_text = 2131165191;
+			public const int leak_canary_chip_new = 2131165191;
 			
 			// aapt resource value: 0x7F070008
-			public const int leak_canary_dump_heap_now = 2131165192;
+			public const int leak_canary_count_text = 2131165192;
 			
 			// aapt resource value: 0x7F070009
-			public const int leak_canary_explorer_list = 2131165193;
+			public const int leak_canary_dump_heap_now = 2131165193;
 			
 			// aapt resource value: 0x7F07000A
-			public const int leak_canary_explorer_title = 2131165194;
+			public const int leak_canary_explorer_list = 2131165194;
 			
 			// aapt resource value: 0x7F07000B
-			public const int leak_canary_header_text = 2131165195;
+			public const int leak_canary_explorer_title = 2131165195;
 			
 			// aapt resource value: 0x7F07000C
-			public const int leak_canary_heap_dump_leaks = 2131165196;
+			public const int leak_canary_header_text = 2131165196;
 			
 			// aapt resource value: 0x7F07000D
-			public const int leak_canary_heap_rendering = 2131165197;
+			public const int leak_canary_heap_dump_leaks = 2131165197;
 			
 			// aapt resource value: 0x7F07000E
-			public const int leak_canary_import_heap_dump = 2131165198;
+			public const int leak_canary_heap_rendering = 2131165198;
 			
 			// aapt resource value: 0x7F07000F
-			public const int leak_canary_leak_text = 2131165199;
+			public const int leak_canary_import_heap_dump = 2131165199;
 			
 			// aapt resource value: 0x7F070010
-			public const int leak_canary_list = 2131165200;
+			public const int leak_canary_leak_text = 2131165200;
 			
 			// aapt resource value: 0x7F070011
-			public const int leak_canary_loading = 2131165201;
+			public const int leak_canary_list = 2131165201;
 			
 			// aapt resource value: 0x7F070012
-			public const int leak_canary_main_container = 2131165202;
+			public const int leak_canary_loading = 2131165202;
 			
 			// aapt resource value: 0x7F070013
-			public const int leak_canary_navigation_button_about = 2131165203;
+			public const int leak_canary_main_container = 2131165203;
 			
 			// aapt resource value: 0x7F070014
-			public const int leak_canary_navigation_button_about_icon = 2131165204;
+			public const int leak_canary_navigation_button_about = 2131165204;
 			
 			// aapt resource value: 0x7F070015
-			public const int leak_canary_navigation_button_heap_dumps = 2131165205;
+			public const int leak_canary_navigation_button_about_icon = 2131165205;
 			
 			// aapt resource value: 0x7F070016
-			public const int leak_canary_navigation_button_heap_dumps_icon = 2131165206;
+			public const int leak_canary_navigation_button_heap_dumps = 2131165206;
 			
 			// aapt resource value: 0x7F070017
-			public const int leak_canary_navigation_button_leaks = 2131165207;
+			public const int leak_canary_navigation_button_heap_dumps_icon = 2131165207;
 			
 			// aapt resource value: 0x7F070018
-			public const int leak_canary_navigation_button_leaks_icon = 2131165208;
+			public const int leak_canary_navigation_button_leaks = 2131165208;
 			
 			// aapt resource value: 0x7F070019
-			public const int leak_canary_notification_analysis_result = 2131165209;
+			public const int leak_canary_navigation_button_leaks_icon = 2131165209;
 			
 			// aapt resource value: 0x7F07001A
-			public const int leak_canary_notification_analyzing_heap = 2131165210;
+			public const int leak_canary_notification_analysis_result = 2131165210;
 			
 			// aapt resource value: 0x7F07001B
-			public const int leak_canary_notification_dumping_heap = 2131165211;
+			public const int leak_canary_notification_analyzing_heap = 2131165211;
 			
 			// aapt resource value: 0x7F07001C
-			public const int leak_canary_notification_no_retained_object_on_tap = 2131165212;
+			public const int leak_canary_notification_dumping_heap = 2131165212;
 			
 			// aapt resource value: 0x7F07001D
-			public const int leak_canary_notification_retained_objects = 2131165213;
+			public const int leak_canary_notification_no_retained_object_on_tap = 2131165213;
 			
 			// aapt resource value: 0x7F07001E
-			public const int leak_canary_notification_write_permission = 2131165214;
+			public const int leak_canary_notification_retained_objects = 2131165214;
 			
 			// aapt resource value: 0x7F07001F
-			public const int leak_canary_row_connector = 2131165215;
+			public const int leak_canary_notification_write_permission = 2131165215;
 			
 			// aapt resource value: 0x7F070020
-			public const int leak_canary_row_small_text = 2131165216;
+			public const int leak_canary_row_connector = 2131165216;
 			
 			// aapt resource value: 0x7F070021
-			public const int leak_canary_row_text = 2131165217;
+			public const int leak_canary_row_small_text = 2131165217;
 			
 			// aapt resource value: 0x7F070022
-			public const int leak_canary_row_title = 2131165218;
+			public const int leak_canary_row_text = 2131165218;
 			
 			// aapt resource value: 0x7F070023
-			public const int leak_canary_search_button = 2131165219;
+			public const int leak_canary_row_title = 2131165219;
 			
 			// aapt resource value: 0x7F070024
-			public const int leak_canary_spinner = 2131165220;
+			public const int leak_canary_search_button = 2131165220;
 			
 			// aapt resource value: 0x7F070025
-			public const int leak_canary_stacktrace = 2131165221;
+			public const int leak_canary_spinner = 2131165221;
 			
 			// aapt resource value: 0x7F070026
-			public const int leak_canary_time_text = 2131165222;
+			public const int leak_canary_stacktrace = 2131165222;
 			
 			// aapt resource value: 0x7F070027
-			public const int leak_canary_toast_icon = 2131165223;
+			public const int leak_canary_time_text = 2131165223;
+			
+			// aapt resource value: 0x7F070028
+			public const int leak_canary_toast_icon = 2131165224;
 			
 			// aapt resource value: 0x7F070000
 			public const int MvvmCrossTagId = 2131165184;
@@ -505,8 +508,8 @@ namespace LeakCanaryTest.Droid
 			// aapt resource value: 0x7F070001
 			public const int MvxBindingTagUnique = 2131165185;
 			
-			// aapt resource value: 0x7F070028
-			public const int textView1 = 2131165224;
+			// aapt resource value: 0x7F070029
+			public const int textView1 = 2131165225;
 			
 			// aapt resource value: 0x7F070002
 			public const int ThirdActivityButton = 2131165186;

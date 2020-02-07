@@ -13,5 +13,13 @@ namespace LeakCanaryTest.Droid.Views
         {
             SetContentView(Resource.Layout.Main);       
         }
+
+        protected override void OnDestroy()
+        {
+            base.OnDestroy();
+
+            // Dispose the activity itself
+            Dispose();
+        }
     }
 }

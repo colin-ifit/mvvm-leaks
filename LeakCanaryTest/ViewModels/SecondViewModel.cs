@@ -12,5 +12,10 @@ namespace LeakCanaryTest.ViewModels
         {
             ShowViewModel<MainViewModel>();
         }
+
+        public new void Dispose()
+        {
+            Dispose();
+        }
     }
 }

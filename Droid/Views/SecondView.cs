@@ -12,9 +12,16 @@ namespace LeakCanaryTest.Droid.Views
         protected override void OnViewModelSet()
         {
             SetContentView(Resource.Layout.Second);
+
+            DestroyCalled += (s, e) => {
+                if (ViewModel is IDisposable)
+                    (ViewModel as IDisposable).Dispose();
+            };
         }
 
-        protected override void OnDestroy()
+
+
+    protected override void OnDestroy()
         {
             base.OnDestroy();
 

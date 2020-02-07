@@ -13,5 +13,10 @@ namespace LeakCanaryTest.ViewModels
         {
             get { return new MvxCommand(() => ShowViewModel<SecondViewModel>()); }
         }
+
+        public new void Dispose()
+        {
+            Dispose();
+        }
     }
 }
