@@ -71,29 +71,126 @@ namespace LeakCanaryTest.Droid
 			global::MvvmCross.Droid.Support.Fragment.Resource.Styleable.MvxListView_MvxItemTemplate = global::LeakCanaryTest.Droid.Resource.Styleable.MvxListView_MvxItemTemplate;
 		}
 		
-		public partial class Attribute
+		public partial class Animation
 		{
 			
 			// aapt resource value: 0x7F010000
-			public const int MvxBind = 2130771968;
+			public const int leak_canary_enter_alpha = 2130771968;
 			
 			// aapt resource value: 0x7F010001
-			public const int MvxDropDownItemTemplate = 2130771969;
+			public const int leak_canary_enter_backward = 2130771969;
 			
 			// aapt resource value: 0x7F010002
-			public const int MvxGroupItemTemplate = 2130771970;
+			public const int leak_canary_enter_forward = 2130771970;
 			
 			// aapt resource value: 0x7F010003
-			public const int MvxItemTemplate = 2130771971;
+			public const int leak_canary_exit_alpha = 2130771971;
 			
 			// aapt resource value: 0x7F010004
-			public const int MvxLang = 2130771972;
+			public const int leak_canary_exit_backward = 2130771972;
 			
 			// aapt resource value: 0x7F010005
-			public const int MvxSource = 2130771973;
+			public const int leak_canary_exit_forward = 2130771973;
 			
-			// aapt resource value: 0x7F010006
-			public const int MvxTemplate = 2130771974;
+			static Animation()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Animation()
+			{
+			}
+		}
+		
+		public partial class Attribute
+		{
+			
+			// aapt resource value: 0x7F020007
+			public const int alpha = 2130837511;
+			
+			// aapt resource value: 0x7F020008
+			public const int coordinatorLayoutStyle = 2130837512;
+			
+			// aapt resource value: 0x7F020009
+			public const int font = 2130837513;
+			
+			// aapt resource value: 0x7F02000A
+			public const int fontProviderAuthority = 2130837514;
+			
+			// aapt resource value: 0x7F02000B
+			public const int fontProviderCerts = 2130837515;
+			
+			// aapt resource value: 0x7F02000C
+			public const int fontProviderFetchStrategy = 2130837516;
+			
+			// aapt resource value: 0x7F02000D
+			public const int fontProviderFetchTimeout = 2130837517;
+			
+			// aapt resource value: 0x7F02000E
+			public const int fontProviderPackage = 2130837518;
+			
+			// aapt resource value: 0x7F02000F
+			public const int fontProviderQuery = 2130837519;
+			
+			// aapt resource value: 0x7F020010
+			public const int fontStyle = 2130837520;
+			
+			// aapt resource value: 0x7F020011
+			public const int fontVariationSettings = 2130837521;
+			
+			// aapt resource value: 0x7F020012
+			public const int fontWeight = 2130837522;
+			
+			// aapt resource value: 0x7F020013
+			public const int keylines = 2130837523;
+			
+			// aapt resource value: 0x7F020014
+			public const int layout_anchor = 2130837524;
+			
+			// aapt resource value: 0x7F020015
+			public const int layout_anchorGravity = 2130837525;
+			
+			// aapt resource value: 0x7F020016
+			public const int layout_behavior = 2130837526;
+			
+			// aapt resource value: 0x7F020017
+			public const int layout_dodgeInsetEdges = 2130837527;
+			
+			// aapt resource value: 0x7F020018
+			public const int layout_insetEdge = 2130837528;
+			
+			// aapt resource value: 0x7F020019
+			public const int layout_keyline = 2130837529;
+			
+			// aapt resource value: 0x7F02001A
+			public const int leak_canary_plus_color = 2130837530;
+			
+			// aapt resource value: 0x7F020000
+			public const int MvxBind = 2130837504;
+			
+			// aapt resource value: 0x7F020001
+			public const int MvxDropDownItemTemplate = 2130837505;
+			
+			// aapt resource value: 0x7F020002
+			public const int MvxGroupItemTemplate = 2130837506;
+			
+			// aapt resource value: 0x7F020003
+			public const int MvxItemTemplate = 2130837507;
+			
+			// aapt resource value: 0x7F020004
+			public const int MvxLang = 2130837508;
+			
+			// aapt resource value: 0x7F020005
+			public const int MvxSource = 2130837509;
+			
+			// aapt resource value: 0x7F020006
+			public const int MvxTemplate = 2130837510;
+			
+			// aapt resource value: 0x7F02001B
+			public const int statusBarBackground = 2130837531;
+			
+			// aapt resource value: 0x7F02001C
+			public const int ttcIndex = 2130837532;
 			
 			static Attribute()
 			{
@@ -105,11 +202,401 @@ namespace LeakCanaryTest.Droid
 			}
 		}
 		
+		public partial class Boolean
+		{
+			
+			// aapt resource value: 0x7F030000
+			public const int leak_canary_add_dynamic_shortcut = 2130903040;
+			
+			// aapt resource value: 0x7F030001
+			public const int leak_canary_add_launcher_icon = 2130903041;
+			
+			static Boolean()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Boolean()
+			{
+			}
+		}
+		
+		public partial class Color
+		{
+			
+			// aapt resource value: 0x7F040000
+			public const int leak_canary_background_color = 2130968576;
+			
+			// aapt resource value: 0x7F040001
+			public const int leak_canary_bottom_menu = 2130968577;
+			
+			// aapt resource value: 0x7F040002
+			public const int leak_canary_class_name = 2130968578;
+			
+			// aapt resource value: 0x7F040003
+			public const int leak_canary_count_default = 2130968579;
+			
+			// aapt resource value: 0x7F040004
+			public const int leak_canary_count_new = 2130968580;
+			
+			// aapt resource value: 0x7F040005
+			public const int leak_canary_count_new_border = 2130968581;
+			
+			// aapt resource value: 0x7F040006
+			public const int leak_canary_count_text = 2130968582;
+			
+			// aapt resource value: 0x7F040007
+			public const int leak_canary_extra = 2130968583;
+			
+			// aapt resource value: 0x7F040008
+			public const int leak_canary_gray = 2130968584;
+			
+			// aapt resource value: 0x7F040009
+			public const int leak_canary_gray_3f = 2130968585;
+			
+			// aapt resource value: 0x7F04000A
+			public const int leak_canary_gray_6f = 2130968586;
+			
+			// aapt resource value: 0x7F04000B
+			public const int leak_canary_gray_darkest = 2130968587;
+			
+			// aapt resource value: 0x7F04000C
+			public const int leak_canary_gray_darkest_25p = 2130968588;
+			
+			// aapt resource value: 0x7F04000D
+			public const int leak_canary_gray_darkest_40p = 2130968589;
+			
+			// aapt resource value: 0x7F04000E
+			public const int leak_canary_gray_light = 2130968590;
+			
+			// aapt resource value: 0x7F04000F
+			public const int leak_canary_gray_lightest = 2130968591;
+			
+			// aapt resource value: 0x7F040010
+			public const int leak_canary_heap_app = 2130968592;
+			
+			// aapt resource value: 0x7F040011
+			public const int leak_canary_heap_boolean_array = 2130968593;
+			
+			// aapt resource value: 0x7F040012
+			public const int leak_canary_heap_byte_array = 2130968594;
+			
+			// aapt resource value: 0x7F040013
+			public const int leak_canary_heap_char_array = 2130968595;
+			
+			// aapt resource value: 0x7F040014
+			public const int leak_canary_heap_class_dump = 2130968596;
+			
+			// aapt resource value: 0x7F040015
+			public const int leak_canary_heap_double_array = 2130968597;
+			
+			// aapt resource value: 0x7F040016
+			public const int leak_canary_heap_float_array = 2130968598;
+			
+			// aapt resource value: 0x7F040017
+			public const int leak_canary_heap_hprof_string = 2130968599;
+			
+			// aapt resource value: 0x7F040018
+			public const int leak_canary_heap_image = 2130968600;
+			
+			// aapt resource value: 0x7F040019
+			public const int leak_canary_heap_instance = 2130968601;
+			
+			// aapt resource value: 0x7F04001A
+			public const int leak_canary_heap_instance_string = 2130968602;
+			
+			// aapt resource value: 0x7F04001B
+			public const int leak_canary_heap_int_array = 2130968603;
+			
+			// aapt resource value: 0x7F04001C
+			public const int leak_canary_heap_load_class = 2130968604;
+			
+			// aapt resource value: 0x7F04001D
+			public const int leak_canary_heap_long_array = 2130968605;
+			
+			// aapt resource value: 0x7F04001E
+			public const int leak_canary_heap_object_array = 2130968606;
+			
+			// aapt resource value: 0x7F04001F
+			public const int leak_canary_heap_other = 2130968607;
+			
+			// aapt resource value: 0x7F040020
+			public const int leak_canary_heap_short_array = 2130968608;
+			
+			// aapt resource value: 0x7F040021
+			public const int leak_canary_heap_stack_trace = 2130968609;
+			
+			// aapt resource value: 0x7F040022
+			public const int leak_canary_heap_zygote = 2130968610;
+			
+			// aapt resource value: 0x7F040023
+			public const int leak_canary_help = 2130968611;
+			
+			// aapt resource value: 0x7F040024
+			public const int leak_canary_leak = 2130968612;
+			
+			// aapt resource value: 0x7F040025
+			public const int leak_canary_reference = 2130968613;
+			
+			// aapt resource value: 0x7F040026
+			public const int leak_canary_white = 2130968614;
+			
+			// aapt resource value: 0x7F040027
+			public const int leak_canary_yellow = 2130968615;
+			
+			// aapt resource value: 0x7F040028
+			public const int leak_canary_yellow_button = 2130968616;
+			
+			// aapt resource value: 0x7F040029
+			public const int leak_canary_yellow_button_pressed = 2130968617;
+			
+			// aapt resource value: 0x7F04002A
+			public const int notification_action_color_filter = 2130968618;
+			
+			// aapt resource value: 0x7F04002B
+			public const int notification_icon_bg_color = 2130968619;
+			
+			// aapt resource value: 0x7F04002C
+			public const int notification_material_background_media_default_color = 2130968620;
+			
+			// aapt resource value: 0x7F04002D
+			public const int primary_text_default_material_dark = 2130968621;
+			
+			// aapt resource value: 0x7F04002E
+			public const int ripple_material_light = 2130968622;
+			
+			// aapt resource value: 0x7F04002F
+			public const int secondary_text_default_material_dark = 2130968623;
+			
+			// aapt resource value: 0x7F040030
+			public const int secondary_text_default_material_light = 2130968624;
+			
+			static Color()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Color()
+			{
+			}
+		}
+		
+		public partial class Dimension
+		{
+			
+			// aapt resource value: 0x7F050000
+			public const int compat_button_inset_horizontal_material = 2131034112;
+			
+			// aapt resource value: 0x7F050001
+			public const int compat_button_inset_vertical_material = 2131034113;
+			
+			// aapt resource value: 0x7F050002
+			public const int compat_button_padding_horizontal_material = 2131034114;
+			
+			// aapt resource value: 0x7F050003
+			public const int compat_button_padding_vertical_material = 2131034115;
+			
+			// aapt resource value: 0x7F050004
+			public const int compat_control_corner_material = 2131034116;
+			
+			// aapt resource value: 0x7F050005
+			public const int compat_notification_large_icon_max_height = 2131034117;
+			
+			// aapt resource value: 0x7F050006
+			public const int compat_notification_large_icon_max_width = 2131034118;
+			
+			// aapt resource value: 0x7F050007
+			public const int leak_canary_connector_center_y = 2131034119;
+			
+			// aapt resource value: 0x7F050008
+			public const int leak_canary_connector_leak_dash_gap = 2131034120;
+			
+			// aapt resource value: 0x7F050009
+			public const int leak_canary_connector_leak_dash_line = 2131034121;
+			
+			// aapt resource value: 0x7F05000A
+			public const int leak_canary_connector_stroke_size = 2131034122;
+			
+			// aapt resource value: 0x7F05000B
+			public const int leak_canary_connector_width = 2131034123;
+			
+			// aapt resource value: 0x7F05000C
+			public const int leak_canary_more_margin_top = 2131034124;
+			
+			// aapt resource value: 0x7F05000D
+			public const int leak_canary_more_size = 2131034125;
+			
+			// aapt resource value: 0x7F05000E
+			public const int leak_canary_more_stroke_width = 2131034126;
+			
+			// aapt resource value: 0x7F05000F
+			public const int leak_canary_row_margins = 2131034127;
+			
+			// aapt resource value: 0x7F050010
+			public const int leak_canary_row_min = 2131034128;
+			
+			// aapt resource value: 0x7F050011
+			public const int leak_canary_row_title_margin_top = 2131034129;
+			
+			// aapt resource value: 0x7F050012
+			public const int leak_canary_squiggly_span_amplitude = 2131034130;
+			
+			// aapt resource value: 0x7F050013
+			public const int leak_canary_squiggly_span_period_degrees = 2131034131;
+			
+			// aapt resource value: 0x7F050014
+			public const int leak_canary_squiggly_span_stroke_width = 2131034132;
+			
+			// aapt resource value: 0x7F050015
+			public const int leak_canary_toast_icon_size = 2131034133;
+			
+			// aapt resource value: 0x7F050016
+			public const int notification_action_icon_size = 2131034134;
+			
+			// aapt resource value: 0x7F050017
+			public const int notification_action_text_size = 2131034135;
+			
+			// aapt resource value: 0x7F050018
+			public const int notification_big_circle_margin = 2131034136;
+			
+			// aapt resource value: 0x7F050019
+			public const int notification_content_margin_start = 2131034137;
+			
+			// aapt resource value: 0x7F05001A
+			public const int notification_large_icon_height = 2131034138;
+			
+			// aapt resource value: 0x7F05001B
+			public const int notification_large_icon_width = 2131034139;
+			
+			// aapt resource value: 0x7F05001C
+			public const int notification_main_column_padding_top = 2131034140;
+			
+			// aapt resource value: 0x7F05001D
+			public const int notification_media_narrow_margin = 2131034141;
+			
+			// aapt resource value: 0x7F05001E
+			public const int notification_right_icon_size = 2131034142;
+			
+			// aapt resource value: 0x7F05001F
+			public const int notification_right_side_padding_top = 2131034143;
+			
+			// aapt resource value: 0x7F050020
+			public const int notification_small_icon_background_padding = 2131034144;
+			
+			// aapt resource value: 0x7F050021
+			public const int notification_small_icon_size_as_large = 2131034145;
+			
+			// aapt resource value: 0x7F050022
+			public const int notification_subtext_size = 2131034146;
+			
+			// aapt resource value: 0x7F050023
+			public const int notification_top_pad = 2131034147;
+			
+			// aapt resource value: 0x7F050024
+			public const int notification_top_pad_large_text = 2131034148;
+			
+			// aapt resource value: 0x7F050025
+			public const int subtitle_corner_radius = 2131034149;
+			
+			// aapt resource value: 0x7F050026
+			public const int subtitle_outline_width = 2131034150;
+			
+			// aapt resource value: 0x7F050027
+			public const int subtitle_shadow_offset = 2131034151;
+			
+			// aapt resource value: 0x7F050028
+			public const int subtitle_shadow_radius = 2131034152;
+			
+			static Dimension()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Dimension()
+			{
+			}
+		}
+		
 		public partial class Drawable
 		{
 			
-			// aapt resource value: 0x7F020000
-			public const int Icon = 2130837504;
+			// aapt resource value: 0x7F060000
+			public const int Icon = 2131099648;
+			
+			// aapt resource value: 0x7F060001
+			public const int leak_canary_count_background = 2131099649;
+			
+			// aapt resource value: 0x7F060002
+			public const int leak_canary_dump = 2131099650;
+			
+			// aapt resource value: 0x7F060003
+			public const int leak_canary_gray_fill = 2131099651;
+			
+			// aapt resource value: 0x7F060004
+			public const int leak_canary_icon = 2131099652;
+			
+			// aapt resource value: 0x7F060005
+			public const int leak_canary_icon_foreground = 2131099653;
+			
+			// aapt resource value: 0x7F060006
+			public const int leak_canary_info = 2131099654;
+			
+			// aapt resource value: 0x7F060007
+			public const int leak_canary_info_rectangle = 2131099655;
+			
+			// aapt resource value: 0x7F060008
+			public const int leak_canary_leak = 2131099656;
+			
+			// aapt resource value: 0x7F060009
+			public const int leak_canary_primary_button = 2131099657;
+			
+			// aapt resource value: 0x7F06000A
+			public const int leak_canary_secondary_button = 2131099658;
+			
+			// aapt resource value: 0x7F06000B
+			public const int leak_canary_tab_background = 2131099659;
+			
+			// aapt resource value: 0x7F06000C
+			public const int leak_canary_tab_selector_ripple = 2131099660;
+			
+			// aapt resource value: 0x7F06000D
+			public const int leak_canary_toast_background = 2131099661;
+			
+			// aapt resource value: 0x7F06000E
+			public const int notification_action_background = 2131099662;
+			
+			// aapt resource value: 0x7F06000F
+			public const int notification_bg = 2131099663;
+			
+			// aapt resource value: 0x7F060010
+			public const int notification_bg_low = 2131099664;
+			
+			// aapt resource value: 0x7F060011
+			public const int notification_bg_low_normal = 2131099665;
+			
+			// aapt resource value: 0x7F060012
+			public const int notification_bg_low_pressed = 2131099666;
+			
+			// aapt resource value: 0x7F060013
+			public const int notification_bg_normal = 2131099667;
+			
+			// aapt resource value: 0x7F060014
+			public const int notification_bg_normal_pressed = 2131099668;
+			
+			// aapt resource value: 0x7F060015
+			public const int notification_icon_background = 2131099669;
+			
+			// aapt resource value: 0x7F060016
+			public const int notification_template_icon_bg = 2131099670;
+			
+			// aapt resource value: 0x7F060017
+			public const int notification_template_icon_low_bg = 2131099671;
+			
+			// aapt resource value: 0x7F060018
+			public const int notification_tile_bg = 2131099672;
+			
+			// aapt resource value: 0x7F060019
+			public const int notify_panel_notification_icon_bg = 2131099673;
 			
 			static Drawable()
 			{
@@ -124,47 +611,305 @@ namespace LeakCanaryTest.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7F030004
-			public const int actualtabcontent = 2130903044;
+			// aapt resource value: 0x7F070004
+			public const int action0 = 2131165188;
 			
-			// aapt resource value: 0x7F030005
-			public const int detail_fragment = 2130903045;
+			// aapt resource value: 0x7F070009
+			public const int actions = 2131165193;
 			
-			// aapt resource value: 0x7F030000
-			public const int DialogButton = 2130903040;
+			// aapt resource value: 0x7F070005
+			public const int action_container = 2131165189;
 			
-			// aapt resource value: 0x7F030006
-			public const int list_fragment = 2130903046;
+			// aapt resource value: 0x7F070006
+			public const int action_divider = 2131165190;
 			
-			// aapt resource value: 0x7F030001
-			public const int LoadingText = 2130903041;
+			// aapt resource value: 0x7F070007
+			public const int action_image = 2131165191;
 			
-			// aapt resource value: 0x7F030002
-			public const int MvvmCrossTagId = 2130903042;
+			// aapt resource value: 0x7F070008
+			public const int action_text = 2131165192;
 			
-			// aapt resource value: 0x7F030003
-			public const int MvxBindingTagUnique = 2130903043;
+			// aapt resource value: 0x7F07000A
+			public const int actualtabcontent = 2131165194;
 			
-			// aapt resource value: 0x7F030007
-			public const int switchFragmentButton = 2130903047;
+			// aapt resource value: 0x7F07000B
+			public const int all = 2131165195;
 			
-			// aapt resource value: 0x7F030008
-			public const int testButton = 2130903048;
+			// aapt resource value: 0x7F07000C
+			public const int async = 2131165196;
 			
-			// aapt resource value: 0x7F030009
-			public const int the_notes = 2130903049;
+			// aapt resource value: 0x7F07000D
+			public const int blocking = 2131165197;
 			
-			// aapt resource value: 0x7F03000B
-			public const int titles_fragment = 2130903051;
+			// aapt resource value: 0x7F07000E
+			public const int bottom = 2131165198;
 			
-			// aapt resource value: 0x7F03000C
-			public const int titles_fragment_holder = 2130903052;
+			// aapt resource value: 0x7F07000F
+			public const int cancel_action = 2131165199;
 			
-			// aapt resource value: 0x7F03000A
-			public const int title_line = 2130903050;
+			// aapt resource value: 0x7F070010
+			public const int center = 2131165200;
 			
-			// aapt resource value: 0x7F03000D
-			public const int when_line = 2130903053;
+			// aapt resource value: 0x7F070011
+			public const int center_horizontal = 2131165201;
+			
+			// aapt resource value: 0x7F070012
+			public const int center_vertical = 2131165202;
+			
+			// aapt resource value: 0x7F070013
+			public const int chronometer = 2131165203;
+			
+			// aapt resource value: 0x7F070014
+			public const int clip_horizontal = 2131165204;
+			
+			// aapt resource value: 0x7F070015
+			public const int clip_vertical = 2131165205;
+			
+			// aapt resource value: 0x7F070016
+			public const int detail_fragment = 2131165206;
+			
+			// aapt resource value: 0x7F070000
+			public const int DialogButton = 2131165184;
+			
+			// aapt resource value: 0x7F070017
+			public const int end = 2131165207;
+			
+			// aapt resource value: 0x7F070018
+			public const int end_padder = 2131165208;
+			
+			// aapt resource value: 0x7F070019
+			public const int fill = 2131165209;
+			
+			// aapt resource value: 0x7F07001A
+			public const int fill_horizontal = 2131165210;
+			
+			// aapt resource value: 0x7F07001B
+			public const int fill_vertical = 2131165211;
+			
+			// aapt resource value: 0x7F07001C
+			public const int forever = 2131165212;
+			
+			// aapt resource value: 0x7F07001D
+			public const int icon = 2131165213;
+			
+			// aapt resource value: 0x7F07001E
+			public const int icon_group = 2131165214;
+			
+			// aapt resource value: 0x7F07001F
+			public const int info = 2131165215;
+			
+			// aapt resource value: 0x7F070020
+			public const int italic = 2131165216;
+			
+			// aapt resource value: 0x7F070021
+			public const int leak_canary_about_text = 2131165217;
+			
+			// aapt resource value: 0x7F070022
+			public const int leak_canary_bottom_navigation_bar = 2131165218;
+			
+			// aapt resource value: 0x7F070023
+			public const int leak_canary_chip_library_leak = 2131165219;
+			
+			// aapt resource value: 0x7F070024
+			public const int leak_canary_chip_new = 2131165220;
+			
+			// aapt resource value: 0x7F070025
+			public const int leak_canary_count_text = 2131165221;
+			
+			// aapt resource value: 0x7F070026
+			public const int leak_canary_dump_heap_now = 2131165222;
+			
+			// aapt resource value: 0x7F070027
+			public const int leak_canary_explorer_list = 2131165223;
+			
+			// aapt resource value: 0x7F070028
+			public const int leak_canary_explorer_title = 2131165224;
+			
+			// aapt resource value: 0x7F070029
+			public const int leak_canary_header_text = 2131165225;
+			
+			// aapt resource value: 0x7F07002A
+			public const int leak_canary_heap_dump_leaks = 2131165226;
+			
+			// aapt resource value: 0x7F07002B
+			public const int leak_canary_heap_rendering = 2131165227;
+			
+			// aapt resource value: 0x7F07002C
+			public const int leak_canary_import_heap_dump = 2131165228;
+			
+			// aapt resource value: 0x7F07002D
+			public const int leak_canary_leak_text = 2131165229;
+			
+			// aapt resource value: 0x7F07002E
+			public const int leak_canary_list = 2131165230;
+			
+			// aapt resource value: 0x7F07002F
+			public const int leak_canary_loading = 2131165231;
+			
+			// aapt resource value: 0x7F070030
+			public const int leak_canary_main_container = 2131165232;
+			
+			// aapt resource value: 0x7F070031
+			public const int leak_canary_navigation_button_about = 2131165233;
+			
+			// aapt resource value: 0x7F070032
+			public const int leak_canary_navigation_button_about_icon = 2131165234;
+			
+			// aapt resource value: 0x7F070033
+			public const int leak_canary_navigation_button_heap_dumps = 2131165235;
+			
+			// aapt resource value: 0x7F070034
+			public const int leak_canary_navigation_button_heap_dumps_icon = 2131165236;
+			
+			// aapt resource value: 0x7F070035
+			public const int leak_canary_navigation_button_leaks = 2131165237;
+			
+			// aapt resource value: 0x7F070036
+			public const int leak_canary_navigation_button_leaks_icon = 2131165238;
+			
+			// aapt resource value: 0x7F070037
+			public const int leak_canary_notification_analysis_result = 2131165239;
+			
+			// aapt resource value: 0x7F070038
+			public const int leak_canary_notification_analyzing_heap = 2131165240;
+			
+			// aapt resource value: 0x7F070039
+			public const int leak_canary_notification_dumping_heap = 2131165241;
+			
+			// aapt resource value: 0x7F07003A
+			public const int leak_canary_notification_no_retained_object_on_tap = 2131165242;
+			
+			// aapt resource value: 0x7F07003B
+			public const int leak_canary_notification_retained_objects = 2131165243;
+			
+			// aapt resource value: 0x7F07003C
+			public const int leak_canary_notification_write_permission = 2131165244;
+			
+			// aapt resource value: 0x7F07003D
+			public const int leak_canary_row_connector = 2131165245;
+			
+			// aapt resource value: 0x7F07003E
+			public const int leak_canary_row_small_text = 2131165246;
+			
+			// aapt resource value: 0x7F07003F
+			public const int leak_canary_row_text = 2131165247;
+			
+			// aapt resource value: 0x7F070040
+			public const int leak_canary_row_title = 2131165248;
+			
+			// aapt resource value: 0x7F070041
+			public const int leak_canary_search_button = 2131165249;
+			
+			// aapt resource value: 0x7F070042
+			public const int leak_canary_spinner = 2131165250;
+			
+			// aapt resource value: 0x7F070043
+			public const int leak_canary_stacktrace = 2131165251;
+			
+			// aapt resource value: 0x7F070044
+			public const int leak_canary_time_text = 2131165252;
+			
+			// aapt resource value: 0x7F070045
+			public const int leak_canary_toast_icon = 2131165253;
+			
+			// aapt resource value: 0x7F070046
+			public const int left = 2131165254;
+			
+			// aapt resource value: 0x7F070047
+			public const int line1 = 2131165255;
+			
+			// aapt resource value: 0x7F070048
+			public const int line3 = 2131165256;
+			
+			// aapt resource value: 0x7F070049
+			public const int list_fragment = 2131165257;
+			
+			// aapt resource value: 0x7F070001
+			public const int LoadingText = 2131165185;
+			
+			// aapt resource value: 0x7F07004A
+			public const int media_actions = 2131165258;
+			
+			// aapt resource value: 0x7F070002
+			public const int MvvmCrossTagId = 2131165186;
+			
+			// aapt resource value: 0x7F070003
+			public const int MvxBindingTagUnique = 2131165187;
+			
+			// aapt resource value: 0x7F07004B
+			public const int none = 2131165259;
+			
+			// aapt resource value: 0x7F07004C
+			public const int normal = 2131165260;
+			
+			// aapt resource value: 0x7F07004D
+			public const int notification_background = 2131165261;
+			
+			// aapt resource value: 0x7F07004E
+			public const int notification_main_column = 2131165262;
+			
+			// aapt resource value: 0x7F07004F
+			public const int notification_main_column_container = 2131165263;
+			
+			// aapt resource value: 0x7F070050
+			public const int right = 2131165264;
+			
+			// aapt resource value: 0x7F070051
+			public const int right_icon = 2131165265;
+			
+			// aapt resource value: 0x7F070052
+			public const int right_side = 2131165266;
+			
+			// aapt resource value: 0x7F070053
+			public const int start = 2131165267;
+			
+			// aapt resource value: 0x7F070054
+			public const int status_bar_latest_event_content = 2131165268;
+			
+			// aapt resource value: 0x7F070055
+			public const int switchFragmentButton = 2131165269;
+			
+			// aapt resource value: 0x7F070056
+			public const int tag_transition_group = 2131165270;
+			
+			// aapt resource value: 0x7F070057
+			public const int tag_unhandled_key_event_manager = 2131165271;
+			
+			// aapt resource value: 0x7F070058
+			public const int tag_unhandled_key_listeners = 2131165272;
+			
+			// aapt resource value: 0x7F070059
+			public const int testButton = 2131165273;
+			
+			// aapt resource value: 0x7F07005A
+			public const int text = 2131165274;
+			
+			// aapt resource value: 0x7F07005B
+			public const int text2 = 2131165275;
+			
+			// aapt resource value: 0x7F07005C
+			public const int the_notes = 2131165276;
+			
+			// aapt resource value: 0x7F07005D
+			public const int time = 2131165277;
+			
+			// aapt resource value: 0x7F07005E
+			public const int title = 2131165278;
+			
+			// aapt resource value: 0x7F070060
+			public const int titles_fragment = 2131165280;
+			
+			// aapt resource value: 0x7F070061
+			public const int titles_fragment_holder = 2131165281;
+			
+			// aapt resource value: 0x7F07005F
+			public const int title_line = 2131165279;
+			
+			// aapt resource value: 0x7F070062
+			public const int top = 2131165282;
+			
+			// aapt resource value: 0x7F070063
+			public const int when_line = 2131165283;
 			
 			static Id()
 			{
@@ -176,59 +921,168 @@ namespace LeakCanaryTest.Droid
 			}
 		}
 		
+		public partial class Integer
+		{
+			
+			// aapt resource value: 0x7F080000
+			public const int cancel_button_image_alpha = 2131230720;
+			
+			// aapt resource value: 0x7F080001
+			public const int status_bar_notification_info_maxnum = 2131230721;
+			
+			static Integer()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Integer()
+			{
+			}
+		}
+		
 		public partial class Layout
 		{
 			
-			// aapt resource value: 0x7F040000
-			public const int Dialog_Names = 2130968576;
+			// aapt resource value: 0x7F090000
+			public const int Dialog_Names = 2131296256;
 			
-			// aapt resource value: 0x7F040001
-			public const int Fragment_Detail = 2130968577;
+			// aapt resource value: 0x7F090001
+			public const int Fragment_Detail = 2131296257;
 			
-			// aapt resource value: 0x7F040002
-			public const int Fragment_FirstHeader = 2130968578;
+			// aapt resource value: 0x7F090002
+			public const int Fragment_FirstHeader = 2131296258;
 			
-			// aapt resource value: 0x7F040003
-			public const int Fragment_List = 2130968579;
+			// aapt resource value: 0x7F090003
+			public const int Fragment_List = 2131296259;
 			
-			// aapt resource value: 0x7F040004
-			public const int Fragment_SecondHeader = 2130968580;
+			// aapt resource value: 0x7F090004
+			public const int Fragment_SecondHeader = 2131296260;
 			
-			// aapt resource value: 0x7F040005
-			public const int Fragment_Titles = 2130968581;
+			// aapt resource value: 0x7F090005
+			public const int Fragment_Titles = 2131296261;
 			
-			// aapt resource value: 0x7F040006
-			public const int ListItem_SimpleItem = 2130968582;
+			// aapt resource value: 0x7F090006
+			public const int leak_canary_about_screen = 2131296262;
 			
-			// aapt resource value: 0x7F040007
-			public const int Page_DetailView = 2130968583;
+			// aapt resource value: 0x7F090007
+			public const int leak_canary_heap_analysis_failure_screen = 2131296263;
 			
-			// aapt resource value: 0x7F040008
-			public const int Page_FormView = 2130968584;
+			// aapt resource value: 0x7F09000A
+			public const int leak_canary_heap_dumps_screen = 2131296266;
 			
-			// aapt resource value: 0x7F040009
-			public const int Page_HomeView = 2130968585;
+			// aapt resource value: 0x7F090008
+			public const int leak_canary_heap_dump_leak_title = 2131296264;
 			
-			// aapt resource value: 0x7F04000A
-			public const int Page_TabView = 2130968586;
+			// aapt resource value: 0x7F090009
+			public const int leak_canary_heap_dump_toast = 2131296265;
 			
-			// aapt resource value: 0x7F04000B
-			public const int Page_TitlesView = 2130968587;
+			// aapt resource value: 0x7F09000B
+			public const int leak_canary_heap_render = 2131296267;
 			
-			// aapt resource value: 0x7F04000C
-			public const int SplashScreen = 2130968588;
+			// aapt resource value: 0x7F09000C
+			public const int leak_canary_hprof_explorer = 2131296268;
 			
-			// aapt resource value: 0x7F04000D
-			public const int tabs_1 = 2130968589;
+			// aapt resource value: 0x7F09000D
+			public const int leak_canary_leak_activity = 2131296269;
 			
-			// aapt resource value: 0x7F04000E
-			public const int tabs_2 = 2130968590;
+			// aapt resource value: 0x7F09000E
+			public const int leak_canary_leak_chips = 2131296270;
 			
-			// aapt resource value: 0x7F04000F
-			public const int tabs_3 = 2130968591;
+			// aapt resource value: 0x7F09000F
+			public const int leak_canary_leak_header = 2131296271;
 			
-			// aapt resource value: 0x7F040010
-			public const int tabs_3_big = 2130968592;
+			// aapt resource value: 0x7F090010
+			public const int leak_canary_leak_row = 2131296272;
+			
+			// aapt resource value: 0x7F090011
+			public const int leak_canary_leak_screen = 2131296273;
+			
+			// aapt resource value: 0x7F090012
+			public const int leak_canary_list = 2131296274;
+			
+			// aapt resource value: 0x7F090013
+			public const int leak_canary_ref_row = 2131296275;
+			
+			// aapt resource value: 0x7F090014
+			public const int leak_canary_simple_row = 2131296276;
+			
+			// aapt resource value: 0x7F090015
+			public const int ListItem_SimpleItem = 2131296277;
+			
+			// aapt resource value: 0x7F090016
+			public const int notification_action = 2131296278;
+			
+			// aapt resource value: 0x7F090017
+			public const int notification_action_tombstone = 2131296279;
+			
+			// aapt resource value: 0x7F090018
+			public const int notification_media_action = 2131296280;
+			
+			// aapt resource value: 0x7F090019
+			public const int notification_media_cancel_action = 2131296281;
+			
+			// aapt resource value: 0x7F09001A
+			public const int notification_template_big_media = 2131296282;
+			
+			// aapt resource value: 0x7F09001B
+			public const int notification_template_big_media_custom = 2131296283;
+			
+			// aapt resource value: 0x7F09001C
+			public const int notification_template_big_media_narrow = 2131296284;
+			
+			// aapt resource value: 0x7F09001D
+			public const int notification_template_big_media_narrow_custom = 2131296285;
+			
+			// aapt resource value: 0x7F09001E
+			public const int notification_template_custom_big = 2131296286;
+			
+			// aapt resource value: 0x7F09001F
+			public const int notification_template_icon_group = 2131296287;
+			
+			// aapt resource value: 0x7F090020
+			public const int notification_template_lines_media = 2131296288;
+			
+			// aapt resource value: 0x7F090021
+			public const int notification_template_media = 2131296289;
+			
+			// aapt resource value: 0x7F090022
+			public const int notification_template_media_custom = 2131296290;
+			
+			// aapt resource value: 0x7F090023
+			public const int notification_template_part_chronometer = 2131296291;
+			
+			// aapt resource value: 0x7F090024
+			public const int notification_template_part_time = 2131296292;
+			
+			// aapt resource value: 0x7F090025
+			public const int Page_DetailView = 2131296293;
+			
+			// aapt resource value: 0x7F090026
+			public const int Page_FormView = 2131296294;
+			
+			// aapt resource value: 0x7F090027
+			public const int Page_HomeView = 2131296295;
+			
+			// aapt resource value: 0x7F090028
+			public const int Page_TabView = 2131296296;
+			
+			// aapt resource value: 0x7F090029
+			public const int Page_TitlesView = 2131296297;
+			
+			// aapt resource value: 0x7F09002A
+			public const int SplashScreen = 2131296298;
+			
+			// aapt resource value: 0x7F09002B
+			public const int tabs_1 = 2131296299;
+			
+			// aapt resource value: 0x7F09002C
+			public const int tabs_2 = 2131296300;
+			
+			// aapt resource value: 0x7F09002D
+			public const int tabs_3 = 2131296301;
+			
+			// aapt resource value: 0x7F09002E
+			public const int tabs_3_big = 2131296302;
 			
 			static Layout()
 			{
@@ -243,8 +1097,11 @@ namespace LeakCanaryTest.Droid
 		public partial class Mipmap
 		{
 			
-			// aapt resource value: 0x7F050000
-			public const int Icon = 2131034112;
+			// aapt resource value: 0x7F0A0000
+			public const int Icon = 2131361792;
+			
+			// aapt resource value: 0x7F0A0001
+			public const int leak_canary_icon = 2131361793;
 			
 			static Mipmap()
 			{
@@ -256,17 +1113,207 @@ namespace LeakCanaryTest.Droid
 			}
 		}
 		
+		public partial class Plurals
+		{
+			
+			// aapt resource value: 0x7F0B0000
+			public const int leak_canary_distinct_leaks = 2131427328;
+			
+			// aapt resource value: 0x7F0B0001
+			public const int leak_canary_group_screen_title = 2131427329;
+			
+			static Plurals()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Plurals()
+			{
+			}
+		}
+		
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7F060000
-			public const int app_name = 2131099648;
+			// aapt resource value: 0x7F0C0000
+			public const int app_name = 2131492864;
 			
-			// aapt resource value: 0x7F060001
-			public const int hello = 2131099649;
+			// aapt resource value: 0x7F0C0001
+			public const int hello = 2131492865;
 			
-			// aapt resource value: 0x7F060002
-			public const int library_name = 2131099650;
+			// aapt resource value: 0x7F0C0002
+			public const int leak_canary_about_menu = 2131492866;
+			
+			// aapt resource value: 0x7F0C0003
+			public const int leak_canary_about_message = 2131492867;
+			
+			// aapt resource value: 0x7F0C0004
+			public const int leak_canary_about_title = 2131492868;
+			
+			// aapt resource value: 0x7F0C0005
+			public const int leak_canary_analysis_deleted_title = 2131492869;
+			
+			// aapt resource value: 0x7F0C0006
+			public const int leak_canary_analysis_failed = 2131492870;
+			
+			// aapt resource value: 0x7F0C0007
+			public const int leak_canary_analysis_success_notification = 2131492871;
+			
+			// aapt resource value: 0x7F0C0008
+			public const int leak_canary_class_has_leaked = 2131492872;
+			
+			// aapt resource value: 0x7F0C0009
+			public const int leak_canary_delete = 2131492873;
+			
+			// aapt resource value: 0x7F0C000A
+			public const int leak_canary_delete_all = 2131492874;
+			
+			// aapt resource value: 0x7F0C000B
+			public const int leak_canary_delete_all_leaks_title = 2131492875;
+			
+			// aapt resource value: 0x7F0C000C
+			public const int leak_canary_display_activity_label = 2131492876;
+			
+			// aapt resource value: 0x7F0C000D
+			public const int leak_canary_dump_heap = 2131492877;
+			
+			// aapt resource value: 0x7F0C000F
+			public const int leak_canary_explorer_search_classes = 2131492879;
+			
+			// aapt resource value: 0x7F0C000E
+			public const int leak_canary_explore_heap_dump = 2131492878;
+			
+			// aapt resource value: 0x7F0C0010
+			public const int leak_canary_failure_clipdata_label = 2131492880;
+			
+			// aapt resource value: 0x7F0C0011
+			public const int leak_canary_failure_copied = 2131492881;
+			
+			// aapt resource value: 0x7F0C0012
+			public const int leak_canary_generating_hq_bitmap_toast_failure_notice = 2131492882;
+			
+			// aapt resource value: 0x7F0C0013
+			public const int leak_canary_generating_hq_bitmap_toast_notice = 2131492883;
+			
+			// aapt resource value: 0x7F0C0014
+			public const int leak_canary_go_to_heap_analysis = 2131492884;
+			
+			// aapt resource value: 0x7F0C0015
+			public const int leak_canary_group_list_time_label = 2131492885;
+			
+			// aapt resource value: 0x7F0C0016
+			public const int leak_canary_heap_analysis_list_screen_title = 2131492886;
+			
+			// aapt resource value: 0x7F0C0017
+			public const int leak_canary_heap_analysis_success_screen_row_time_format = 2131492887;
+			
+			// aapt resource value: 0x7F0C0018
+			public const int leak_canary_heap_dump_screen_title = 2131492888;
+			
+			// aapt resource value: 0x7F0C0019
+			public const int leak_canary_help_title = 2131492889;
+			
+			// aapt resource value: 0x7F0C001A
+			public const int leak_canary_import_from_title = 2131492890;
+			
+			// aapt resource value: 0x7F0C001B
+			public const int leak_canary_import_hprof_file = 2131492891;
+			
+			// aapt resource value: 0x7F0C001C
+			public const int leak_canary_leak_clipdata_label = 2131492892;
+			
+			// aapt resource value: 0x7F0C001D
+			public const int leak_canary_leak_copied = 2131492893;
+			
+			// aapt resource value: 0x7F0C001E
+			public const int leak_canary_leak_not_found = 2131492894;
+			
+			// aapt resource value: 0x7F0C001F
+			public const int leak_canary_loading_title = 2131492895;
+			
+			// aapt resource value: 0x7F0C0020
+			public const int leak_canary_notification_analysing = 2131492896;
+			
+			// aapt resource value: 0x7F0C0021
+			public const int leak_canary_notification_channel_low = 2131492897;
+			
+			// aapt resource value: 0x7F0C0022
+			public const int leak_canary_notification_channel_result = 2131492898;
+			
+			// aapt resource value: 0x7F0C0023
+			public const int leak_canary_notification_dumping = 2131492899;
+			
+			// aapt resource value: 0x7F0C0024
+			public const int leak_canary_notification_foreground_text = 2131492900;
+			
+			// aapt resource value: 0x7F0C0025
+			public const int leak_canary_notification_message = 2131492901;
+			
+			// aapt resource value: 0x7F0C0026
+			public const int leak_canary_notification_no_retained_object_content = 2131492902;
+			
+			// aapt resource value: 0x7F0C0027
+			public const int leak_canary_notification_no_retained_object_title = 2131492903;
+			
+			// aapt resource value: 0x7F0C0028
+			public const int leak_canary_notification_retained_debugger_attached = 2131492904;
+			
+			// aapt resource value: 0x7F0C0029
+			public const int leak_canary_notification_retained_dump_failed = 2131492905;
+			
+			// aapt resource value: 0x7F0C002A
+			public const int leak_canary_notification_retained_dump_wait = 2131492906;
+			
+			// aapt resource value: 0x7F0C002B
+			public const int leak_canary_notification_retained_title = 2131492907;
+			
+			// aapt resource value: 0x7F0C002C
+			public const int leak_canary_notification_retained_visible = 2131492908;
+			
+			// aapt resource value: 0x7F0C002D
+			public const int leak_canary_options_menu_generate_hq_bitmap = 2131492909;
+			
+			// aapt resource value: 0x7F0C002E
+			public const int leak_canary_options_menu_permission_toast = 2131492910;
+			
+			// aapt resource value: 0x7F0C002F
+			public const int leak_canary_options_menu_render_heap_dump = 2131492911;
+			
+			// aapt resource value: 0x7F0C0031
+			public const int leak_canary_permission_notification_text = 2131492913;
+			
+			// aapt resource value: 0x7F0C0032
+			public const int leak_canary_permission_notification_title = 2131492914;
+			
+			// aapt resource value: 0x7F0C0030
+			public const int leak_canary_permission_not_granted = 2131492912;
+			
+			// aapt resource value: 0x7F0C0033
+			public const int leak_canary_share_heap_dump_bitmap_screen_title = 2131492915;
+			
+			// aapt resource value: 0x7F0C0034
+			public const int leak_canary_share_with = 2131492916;
+			
+			// aapt resource value: 0x7F0C0035
+			public const int leak_canary_shortcut_label = 2131492917;
+			
+			// aapt resource value: 0x7F0C0036
+			public const int leak_canary_stackoverflow_share = 2131492918;
+			
+			// aapt resource value: 0x7F0C0037
+			public const int leak_canary_storage_permission_activity_label = 2131492919;
+			
+			// aapt resource value: 0x7F0C0038
+			public const int leak_canary_test_class_name = 2131492920;
+			
+			// aapt resource value: 0x7F0C0039
+			public const int leak_canary_toast_heap_dump = 2131492921;
+			
+			// aapt resource value: 0x7F0C003A
+			public const int library_name = 2131492922;
+			
+			// aapt resource value: 0x7F0C003B
+			public const int status_bar_notification_info_overflow = 2131492923;
 			
 			static String()
 			{
@@ -278,13 +1325,270 @@ namespace LeakCanaryTest.Droid
 			}
 		}
 		
+		public partial class Style
+		{
+			
+			// aapt resource value: 0x7F0D000D
+			public const int leak_canary_LeakCanary_Base = 2131558413;
+			
+			// aapt resource value: 0x7F0D000E
+			public const int leak_canary_Theme_Transparent = 2131558414;
+			
+			// aapt resource value: 0x7F0D000F
+			public const int leak_canary_Widget_ActionBar = 2131558415;
+			
+			// aapt resource value: 0x7F0D0000
+			public const int TextAppearance_Compat_Notification = 2131558400;
+			
+			// aapt resource value: 0x7F0D0001
+			public const int TextAppearance_Compat_Notification_Info = 2131558401;
+			
+			// aapt resource value: 0x7F0D0002
+			public const int TextAppearance_Compat_Notification_Info_Media = 2131558402;
+			
+			// aapt resource value: 0x7F0D0003
+			public const int TextAppearance_Compat_Notification_Line2 = 2131558403;
+			
+			// aapt resource value: 0x7F0D0004
+			public const int TextAppearance_Compat_Notification_Line2_Media = 2131558404;
+			
+			// aapt resource value: 0x7F0D0005
+			public const int TextAppearance_Compat_Notification_Media = 2131558405;
+			
+			// aapt resource value: 0x7F0D0006
+			public const int TextAppearance_Compat_Notification_Time = 2131558406;
+			
+			// aapt resource value: 0x7F0D0007
+			public const int TextAppearance_Compat_Notification_Time_Media = 2131558407;
+			
+			// aapt resource value: 0x7F0D0008
+			public const int TextAppearance_Compat_Notification_Title = 2131558408;
+			
+			// aapt resource value: 0x7F0D0009
+			public const int TextAppearance_Compat_Notification_Title_Media = 2131558409;
+			
+			// aapt resource value: 0x7F0D000A
+			public const int Widget_Compat_NotificationActionContainer = 2131558410;
+			
+			// aapt resource value: 0x7F0D000B
+			public const int Widget_Compat_NotificationActionText = 2131558411;
+			
+			// aapt resource value: 0x7F0D000C
+			public const int Widget_Support_CoordinatorLayout = 2131558412;
+			
+			static Style()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Style()
+			{
+			}
+		}
+		
 		public partial class Styleable
 		{
 			
-			// aapt resource value: { 0x7F010000,0x7F010004 }
+			// aapt resource value: { 0x10101A5,0x101031F,0x7F020007 }
+			public static int[] ColorStateListItem = new int[] {
+					16843173,
+					16843551,
+					2130837511};
+			
+			// aapt resource value: 2
+			public const int ColorStateListItem_alpha = 2;
+			
+			// aapt resource value: 1
+			public const int ColorStateListItem_android_alpha = 1;
+			
+			// aapt resource value: 0
+			public const int ColorStateListItem_android_color = 0;
+			
+			// aapt resource value: { 0x7F020013,0x7F02001B }
+			public static int[] CoordinatorLayout = new int[] {
+					2130837523,
+					2130837531};
+			
+			// aapt resource value: 0
+			public const int CoordinatorLayout_keylines = 0;
+			
+			// aapt resource value: { 0x10100B3,0x7F020014,0x7F020015,0x7F020016,0x7F020017,0x7F020018,0x7F020019 }
+			public static int[] CoordinatorLayout_Layout = new int[] {
+					16842931,
+					2130837524,
+					2130837525,
+					2130837526,
+					2130837527,
+					2130837528,
+					2130837529};
+			
+			// aapt resource value: 0
+			public const int CoordinatorLayout_Layout_android_layout_gravity = 0;
+			
+			// aapt resource value: 1
+			public const int CoordinatorLayout_Layout_layout_anchor = 1;
+			
+			// aapt resource value: 2
+			public const int CoordinatorLayout_Layout_layout_anchorGravity = 2;
+			
+			// aapt resource value: 3
+			public const int CoordinatorLayout_Layout_layout_behavior = 3;
+			
+			// aapt resource value: 4
+			public const int CoordinatorLayout_Layout_layout_dodgeInsetEdges = 4;
+			
+			// aapt resource value: 5
+			public const int CoordinatorLayout_Layout_layout_insetEdge = 5;
+			
+			// aapt resource value: 6
+			public const int CoordinatorLayout_Layout_layout_keyline = 6;
+			
+			// aapt resource value: 1
+			public const int CoordinatorLayout_statusBarBackground = 1;
+			
+			// aapt resource value: { 0x7F02000A,0x7F02000B,0x7F02000C,0x7F02000D,0x7F02000E,0x7F02000F }
+			public static int[] FontFamily = new int[] {
+					2130837514,
+					2130837515,
+					2130837516,
+					2130837517,
+					2130837518,
+					2130837519};
+			
+			// aapt resource value: { 0x1010532,0x1010533,0x101053F,0x101056F,0x1010570,0x7F020009,0x7F020010,0x7F020011,0x7F020012,0x7F02001C }
+			public static int[] FontFamilyFont = new int[] {
+					16844082,
+					16844083,
+					16844095,
+					16844143,
+					16844144,
+					2130837513,
+					2130837520,
+					2130837521,
+					2130837522,
+					2130837532};
+			
+			// aapt resource value: 0
+			public const int FontFamilyFont_android_font = 0;
+			
+			// aapt resource value: 2
+			public const int FontFamilyFont_android_fontStyle = 2;
+			
+			// aapt resource value: 4
+			public const int FontFamilyFont_android_fontVariationSettings = 4;
+			
+			// aapt resource value: 1
+			public const int FontFamilyFont_android_fontWeight = 1;
+			
+			// aapt resource value: 3
+			public const int FontFamilyFont_android_ttcIndex = 3;
+			
+			// aapt resource value: 5
+			public const int FontFamilyFont_font = 5;
+			
+			// aapt resource value: 6
+			public const int FontFamilyFont_fontStyle = 6;
+			
+			// aapt resource value: 7
+			public const int FontFamilyFont_fontVariationSettings = 7;
+			
+			// aapt resource value: 8
+			public const int FontFamilyFont_fontWeight = 8;
+			
+			// aapt resource value: 9
+			public const int FontFamilyFont_ttcIndex = 9;
+			
+			// aapt resource value: 0
+			public const int FontFamily_fontProviderAuthority = 0;
+			
+			// aapt resource value: 1
+			public const int FontFamily_fontProviderCerts = 1;
+			
+			// aapt resource value: 2
+			public const int FontFamily_fontProviderFetchStrategy = 2;
+			
+			// aapt resource value: 3
+			public const int FontFamily_fontProviderFetchTimeout = 3;
+			
+			// aapt resource value: 4
+			public const int FontFamily_fontProviderPackage = 4;
+			
+			// aapt resource value: 5
+			public const int FontFamily_fontProviderQuery = 5;
+			
+			// aapt resource value: { 0x101019D,0x101019E,0x10101A1,0x10101A2,0x10101A3,0x10101A4,0x1010201,0x101020B,0x1010510,0x1010511,0x1010512,0x1010513 }
+			public static int[] GradientColor = new int[] {
+					16843165,
+					16843166,
+					16843169,
+					16843170,
+					16843171,
+					16843172,
+					16843265,
+					16843275,
+					16844048,
+					16844049,
+					16844050,
+					16844051};
+			
+			// aapt resource value: { 0x10101A5,0x1010514 }
+			public static int[] GradientColorItem = new int[] {
+					16843173,
+					16844052};
+			
+			// aapt resource value: 0
+			public const int GradientColorItem_android_color = 0;
+			
+			// aapt resource value: 1
+			public const int GradientColorItem_android_offset = 1;
+			
+			// aapt resource value: 7
+			public const int GradientColor_android_centerColor = 7;
+			
+			// aapt resource value: 3
+			public const int GradientColor_android_centerX = 3;
+			
+			// aapt resource value: 4
+			public const int GradientColor_android_centerY = 4;
+			
+			// aapt resource value: 1
+			public const int GradientColor_android_endColor = 1;
+			
+			// aapt resource value: 10
+			public const int GradientColor_android_endX = 10;
+			
+			// aapt resource value: 11
+			public const int GradientColor_android_endY = 11;
+			
+			// aapt resource value: 5
+			public const int GradientColor_android_gradientRadius = 5;
+			
+			// aapt resource value: 0
+			public const int GradientColor_android_startColor = 0;
+			
+			// aapt resource value: 8
+			public const int GradientColor_android_startX = 8;
+			
+			// aapt resource value: 9
+			public const int GradientColor_android_startY = 9;
+			
+			// aapt resource value: 6
+			public const int GradientColor_android_tileMode = 6;
+			
+			// aapt resource value: 2
+			public const int GradientColor_android_type = 2;
+			
+			// aapt resource value: { 0x7F02001A }
+			public static int[] leak_canary_MoreDetailsView = new int[] {
+					2130837530};
+			
+			// aapt resource value: 0
+			public const int leak_canary_MoreDetailsView_leak_canary_plus_color = 0;
+			
+			// aapt resource value: { 0x7F020000,0x7F020004 }
 			public static int[] MvxBinding = new int[] {
-					2130771968,
-					2130771972};
+					2130837504,
+					2130837508};
 			
 			// aapt resource value: 0
 			public const int MvxBinding_MvxBind = 0;
@@ -292,31 +1596,31 @@ namespace LeakCanaryTest.Droid
 			// aapt resource value: 1
 			public const int MvxBinding_MvxLang = 1;
 			
-			// aapt resource value: { 0x7F010006 }
+			// aapt resource value: { 0x7F020006 }
 			public static int[] MvxControl = new int[] {
-					2130771974};
+					2130837510};
 			
 			// aapt resource value: 0
 			public const int MvxControl_MvxTemplate = 0;
 			
-			// aapt resource value: { 0x7F010002 }
+			// aapt resource value: { 0x7F020002 }
 			public static int[] MvxExpandableListView = new int[] {
-					2130771970};
+					2130837506};
 			
 			// aapt resource value: 0
 			public const int MvxExpandableListView_MvxGroupItemTemplate = 0;
 			
-			// aapt resource value: { 0x7F010005 }
+			// aapt resource value: { 0x7F020005 }
 			public static int[] MvxImageView = new int[] {
-					2130771973};
+					2130837509};
 			
 			// aapt resource value: 0
 			public const int MvxImageView_MvxSource = 0;
 			
-			// aapt resource value: { 0x7F010001,0x7F010003 }
+			// aapt resource value: { 0x7F020001,0x7F020003 }
 			public static int[] MvxListView = new int[] {
-					2130771969,
-					2130771971};
+					2130837505,
+					2130837507};
 			
 			// aapt resource value: 0
 			public const int MvxListView_MvxDropDownItemTemplate = 0;
@@ -330,6 +1634,22 @@ namespace LeakCanaryTest.Droid
 			}
 			
 			private Styleable()
+			{
+			}
+		}
+		
+		public partial class Xml
+		{
+			
+			// aapt resource value: 0x7F0F0000
+			public const int leak_canary_file_paths = 2131689472;
+			
+			static Xml()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Xml()
 			{
 			}
 		}
