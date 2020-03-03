@@ -41,39 +41,6 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
-    <Reference Include="LeakCanary.Android.Core">
-      <HintPath>..\packages\iFit.LeakCanary.2.1.1\lib\monoandroid90\LeakCanary.Android.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="LeakCanary.Android">
-      <HintPath>..\packages\iFit.LeakCanary.2.1.1\lib\monoandroid90\LeakCanary.Android.dll</HintPath>
-    </Reference>
-    <Reference Include="LeakCanary.ObjectWatcher.Android">
-      <HintPath>..\packages\iFit.LeakCanary.2.1.1\lib\monoandroid90\LeakCanary.ObjectWatcher.Android.dll</HintPath>
-    </Reference>
-    <Reference Include="LeakCanary.ObjectWatcher.AndroidSupportFragments">
-      <HintPath>..\packages\iFit.LeakCanary.2.1.1\lib\monoandroid90\LeakCanary.ObjectWatcher.AndroidSupportFragments.dll</HintPath>
-    </Reference>
-    <Reference Include="LeakCanary.ObjectWatcher.AndroidX">
-      <HintPath>..\packages\iFit.LeakCanary.2.1.1\lib\monoandroid90\LeakCanary.ObjectWatcher.AndroidX.dll</HintPath>
-    </Reference>
-    <Reference Include="LeakCanary.ObjectWatcher">
-      <HintPath>..\packages\iFit.LeakCanary.2.1.1\lib\monoandroid90\LeakCanary.ObjectWatcher.dll</HintPath>
-    </Reference>
-    <Reference Include="Shark">
-      <HintPath>..\packages\iFit.LeakCanary.2.1.1\lib\monoandroid90\Shark.dll</HintPath>
-    </Reference>
-    <Reference Include="SharkAndroid">
-      <HintPath>..\packages\iFit.LeakCanary.2.1.1\lib\monoandroid90\SharkAndroid.dll</HintPath>
-    </Reference>
-    <Reference Include="SharkGraph">
-      <HintPath>..\packages\iFit.LeakCanary.2.1.1\lib\monoandroid90\SharkGraph.dll</HintPath>
-    </Reference>
-    <Reference Include="SharkHprof">
-      <HintPath>..\packages\iFit.LeakCanary.2.1.1\lib\monoandroid90\SharkHprof.dll</HintPath>
-    </Reference>
-    <Reference Include="SharkLog">
-      <HintPath>..\packages\iFit.LeakCanary.2.1.1\lib\monoandroid90\SharkLog.dll</HintPath>
-    </Reference>
     <Reference Include="Java.Interop" />
     <Reference Include="MvvmCross.Platform">
       <HintPath>..\packages\MvvmCross.Platform.4.4.0\lib\MonoAndroid\MvvmCross.Platform.dll</HintPath>
@@ -88,7 +55,7 @@
       <HintPath>..\packages\MvvmCross.Core.4.4.0\lib\MonoAndroid\MvvmCross.Droid.dll</HintPath>
     </Reference>
     <Reference Include="MvvmCross.Droid.Shared">
-      <HintPath>..\packages\MvvmCross.Core.4.4.0\lib\MonoAndroid\MvvmCross.Droid.Shared.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.Droid.Shared.4.4.0\lib\MonoAndroid\MvvmCross.Droid.Shared.dll</HintPath>
     </Reference>
     <Reference Include="MvvmCross.Binding">
       <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\MonoAndroid\MvvmCross.Binding.dll</HintPath>
@@ -112,29 +79,136 @@
     <Reference Include="Square.OkIO">
       <HintPath>..\packages\Square.OkIO.2.4.1\lib\monoandroid90\Square.OkIO.dll</HintPath>
     </Reference>
+    <Reference Include="Xamarin.Android.Support.Compat">
+      <HintPath>..\packages\Xamarin.Android.Support.Compat.24.2.1\lib\MonoAndroid70\Xamarin.Android.Support.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Core.UI">
+      <HintPath>..\packages\Xamarin.Android.Support.Core.UI.24.2.1\lib\MonoAndroid70\Xamarin.Android.Support.Core.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Core.Utils">
+      <HintPath>..\packages\Xamarin.Android.Support.Core.Utils.24.2.1\lib\MonoAndroid70\Xamarin.Android.Support.Core.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Media.Compat">
+      <HintPath>..\packages\Xamarin.Android.Support.Media.Compat.24.2.1\lib\MonoAndroid70\Xamarin.Android.Support.Media.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Fragment">
+      <HintPath>..\packages\Xamarin.Android.Support.Fragment.24.2.1\lib\MonoAndroid70\Xamarin.Android.Support.Fragment.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Droid.Support.Fragment">
+      <HintPath>..\packages\MvvmCross.Droid.Support.Fragment.4.4.0\lib\MonoAndroid70\MvvmCross.Droid.Support.Fragment.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Setup.cs" />
-    <Compile Include="Views\MainView.cs" />
-    <Compile Include="Views\SecondView.cs" />
+    <Compile Include="Views\TitlesView.cs" />
+    <Compile Include="Views\SearchView.cs" />
+    <Compile Include="Views\HomeView.cs" />
+    <Compile Include="Views\DetailView.cs" />
+    <Compile Include="Views\TabView.cs" />
+    <Compile Include="Views\Frags\Tabs\Tab2Fragment.cs" />
+    <Compile Include="Views\Frags\Tabs\Tab3Fragment.cs" />
+    <Compile Include="Views\Frags\Tabs\Tab1Fragment.cs" />
+    <Compile Include="Views\Frags\Form\MyFirstFragment.cs" />
+    <Compile Include="Views\Frags\Form\MySecondFragment.cs" />
+    <Compile Include="Views\Frags\Form\MyListFragment.cs" />
+    <Compile Include="Views\Frags\Dialog\NameDialogFragment.cs" />
+    <Compile Include="Views\Frags\Shakespeare\DetailFragment.cs" />
+    <Compile Include="Views\Frags\Shakespeare\TitlesFragment.cs" />
+    <Compile Include="SplashScreenActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
+    <None Include="Resources\.DS_Store" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\Main.axml" />
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\mipmap-hdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-mdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
-    <AndroidResource Include="Resources\layout\Second.axml">
+    <AndroidResource Include="Resources\layout\Page_FormView.axml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\tabs_1.axml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Page_HomeView.axml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Dialog_Names.axml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Fragment_Titles.axml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Page_DetailView.axml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Fragment_SecondHeader.axml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\tabs_3_big.axml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Page_TitlesView.axml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\SplashScreen.axml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\tabs_2.axml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Fragment_FirstHeader.axml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Page_TabView.axml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Fragment_List.axml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\tabs_3.axml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Fragment_Detail.axml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ListItem_SimpleItem.axml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout-large-land\Page_TitlesView.axml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout-large\Page_TitlesView.axml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\Icon.png">
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>
@@ -147,4 +221,5 @@
   <Import Project="..\packages\Xamarin.Jetbrains.Annotations.13.0.0.1\build\monoandroid90\Xamarin.Jetbrains.Annotations.targets" Condition="Exists('..\packages\Xamarin.Jetbrains.Annotations.13.0.0.1\build\monoandroid90\Xamarin.Jetbrains.Annotations.targets')" />
   <Import Project="..\packages\Xamarin.Kotlin.StdLib.Common.1.3.50.1\build\monoandroid90\Xamarin.Kotlin.StdLib.Common.targets" Condition="Exists('..\packages\Xamarin.Kotlin.StdLib.Common.1.3.50.1\build\monoandroid90\Xamarin.Kotlin.StdLib.Common.targets')" />
   <Import Project="..\packages\Xamarin.Kotlin.StdLib.1.3.50.1\build\monoandroid90\Xamarin.Kotlin.StdLib.targets" Condition="Exists('..\packages\Xamarin.Kotlin.StdLib.1.3.50.1\build\monoandroid90\Xamarin.Kotlin.StdLib.targets')" />
+
 </Project>

@@ -1,39 +1,41 @@
-﻿using Leakcanary;
-using LeakCanaryTest.ViewModels;
+﻿using LeakCanaryTest.ViewModels;
+using MvvmCross.Platform.IoC;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform;
-using Shark;
 
 namespace LeakCanaryTest
 {
     public class App : MvxApplication
     {
-        public App()
+
+        //public App()
+        //{
+        //    Mvx.RegisterSingleton<IMvxAppStart>(new MvxAppStart<HomeViewModel>());
+        //}
+        public override void Initialize()
         {
-            Mvx.RegisterSingleton<IMvxAppStart>(new MvxAppStart<MainViewModel>());
+            base.Initialize();
+            InitialisePlugins();
+            InitaliseServices();
+            InitialiseStartNavigation();
+        }
 
-			//var config = LeakCanary.Instance.GetConfig();
+        private void InitaliseServices()
+        {
+            CreatableTypes().EndingWith("Service").AsInterfaces().RegisterAsLazySingleton();
+        }
 
-			//var matchers = config.ReferenceMatchers;
-			//matchers.Add(new IgnoredReferenceMatcher(new ReferencePattern.InstanceFieldPattern("android.app.ContextImpl", "mOuterContext")));
-			//matchers.Add(new IgnoredReferenceMatcher(new ReferencePattern.InstanceFieldPattern("android.app.ContextImpl", "mAutofillClient")));
+        private void InitialiseStartNavigation()
+        {
+            //RegisterAppStart<HomeViewModel>();
+            Mvx.RegisterSingleton<IMvxAppStart>(new MvxAppStart<HomeViewModel>());
+        }
 
-			//var copiedConfig = LeakCanary.Instance.GetConfig().Copy(
-			//  config.DumpHeap,
-			//  config.DumpHeapWhenDebugging,
-			//  1,
-			//  matchers,
-			//  config.ObjectInspectors,
-			//  config.OnHeapAnalyzedListener,
-			//  config.MetatadaExtractor,
-			//  config.ComputeRetainedHeapSize,
-			//  config.MaxStoredHeapDumps,
-			//  config.RequestWriteExternalStoragePermission,
-			//  config.LeakingObjectFinder,
-			//  config.UseExperimentalLeakFinders
-			//  );
-
-			//LeakCanary.Instance.SetConfig(copiedConfig);
-		}
+        private void InitialisePlugins()
+        {
+            // initialise any plugins where are required at app startup
+            // e.g. MvvmCross.Plugins.Visibility.PluginLoader.Instance.EnsureLoaded();
+        }
     }
+    
 }

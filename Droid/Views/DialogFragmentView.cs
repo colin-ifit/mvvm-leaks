@@ -1,13 +1,12 @@
 ﻿using System;
 using Android.App;
 using Android.Widget;
-using MvvmCross.Droid.Views;
 using LeakCanaryTest.ViewModels;
-
+using MvvmCross.Droid.Views;
 namespace LeakCanaryTest.Droid.Views
 {
-    [Activity(Label = "SecondView")]
-    public class SecondView : MvxActivity
+    [Activity(Label = "DialogFragmentView")]
+    public class DialogFragmentView : MvxActivity
     {
         protected override void OnViewModelSet()
         {
@@ -21,7 +20,7 @@ namespace LeakCanaryTest.Droid.Views
 
 
 
-    protected override void OnDestroy()
+        protected override void OnDestroy()
         {
             base.OnDestroy();
 

@@ -1,9 +1,51 @@
-﻿using Android.Content;
-using MvvmCross.Core.ViewModels;
+﻿using System;
+using System.Collections.Generic;
+using Android.Content;
+using MvvmCross.Platform;
 using MvvmCross.Droid.Platform;
+using MvvmCross.Droid.Views;
+using MvvmCross.Core.ViewModels;
+
 namespace LeakCanaryTest.Droid
 {
-    public class Setup : MvxAndroidSetup
+    public interface IFragmentHost
+    {
+        bool Show(MvxViewModelRequest request);
+    }
+
+    public interface ICustomPresenter
+    {
+        void Register(Type viewModelType, IFragmentHost host);
+    }
+
+    public class CustomPresenter
+        : MvxAndroidViewPresenter
+        , ICustomPresenter
+    {
+        private Dictionary<Type, IFragmentHost> _dictionary = new Dictionary<Type, IFragmentHost>();
+
+        public override void Show(MvxViewModelRequest request)
+        {
+            IFragmentHost host;
+            if (_dictionary.TryGetValue(request.ViewModelType, out host))
+            {
+                if (host.Show(request))
+                {
+                    return;
+                }
+            }
+
+            base.Show(request);
+        }
+
+        public void Register(Type viewModelType, IFragmentHost host)
+        {
+            _dictionary[viewModelType] = host;
+        }
+    }
+
+    public class Setup
+        : MvxAndroidSetup
     {
         public Setup(Context applicationContext)
             : base(applicationContext)
@@ -13,6 +55,20 @@ namespace LeakCanaryTest.Droid
         protected override IMvxApplication CreateApp()
         {
             return new App();
+        }
+
+        protected override IMvxAndroidViewPresenter CreateViewPresenter()
+        {
+            var customPresenter = new CustomPresenter();
+            Mvx.RegisterSingleton<ICustomPresenter>(customPresenter);
+            return customPresenter;
+        }
+
+        public override void LoadPlugins(MvvmCross.Platform.Plugins.IMvxPluginManager pluginManager)
+        {
+            //pluginManager.EnsurePluginLoaded<MvvmCross.Plugins.File.PluginLoader>();
+            //pluginManager.EnsurePluginLoaded<MvvmCross.Plugins.DownloadCache.PluginLoader>();
+            base.LoadPlugins(pluginManager);
         }
     }
 }

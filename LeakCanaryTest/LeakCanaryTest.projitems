@@ -9,9 +9,25 @@
     <Import_RootNamespace>LeakCanaryTest</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MainViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SecondViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\TimeAgoConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Search\ISearchService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Search\SearchService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Search\SearchServiceError.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Search\SearchResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Calcs\CalculationService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Calcs\ICalculationService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BaseViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\HomeViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Form\SearchViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Tab\SecondTabViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Tab\FirstTabViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Tab\TabViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Tab\ThirdTabViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Tab\BaseSubTabViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Dialog\NamesViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Shakespeare\TitlesViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Shakespeare\DetailViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)ViewModels\" />
